@@ -14,6 +14,26 @@ body {
   background-color: #fff;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.header img{
+  width: 200px;
+}
+
+.icons {
+  margin-bottom: 30px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
 /* Media Queries  */
 
 @media screen and (min-width: 992px) {

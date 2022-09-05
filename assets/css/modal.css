@@ -14,14 +14,13 @@
   max-width: 600px;
   background-color: #eee;
   box-shadow: 0 0 2px #fff;
+  padding: 2rem;
 }
 
 .modal-header {
-  background-color: #ccc;
-}
-
-.modal-header h1 {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 6.625rem;
 }
 
 .modal-header .modal-body .modal-footer {
@@ -30,8 +29,8 @@
 
 .modal-footer button {
   padding: 0.25rem 0.5rem;
-  margin: 0.25rem 0;
-  font-size: 0.625rem;
+  margin-top: 1.2rem;
+  font-size: 0.725rem;
   color: white;
   background-color: #6c79db;
   border: none;
@@ -50,17 +49,10 @@
   transform: translateY(4px);
 }
 
-#current-pokemon-info {
-  margin-top: 6vh;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
-  overflow-y: scroll; 
-}
-
-#current-pokemon-info h1, h2, h3, h4 {
+#current-pokemon-info h1,
+h2,
+h3,
+h4 {
   color: #011030;
   margin: 5px;
   text-align: center;
@@ -68,6 +60,10 @@
 
 .font-size-12 {
   font-size: 12px;
+}
+
+span {
+  color: #8f9396;
 }
 
 .bold {
@@ -98,16 +94,66 @@
   margin: 5px;
 }
 
-.pokemon-info-variable-container{
+.hide {
+  display: none !important;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  flex: 1;
+}
+
+.container {
+  border-radius: 20px;
+  box-shadow: #ededed 0 10px 10px;
+  padding: 15px;
+  background-color: white;
+}
+
+.type-container {
+  border-radius: 5px;
+  padding: 3px 7px;
+  color: black;
+  margin: 5px;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+#current-pokemon-info {
+  margin-top: 6vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+#current-pokemon-image {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 78vh;
+  margin: 0 auto;
+  object-fit: contain;
+  max-width: 250px;
+  max-height: 15vh;
+}
+
+.pokemon-info-variable-container {
   width: 100%;
-  background-color: #F6F8FC;
+  background-color: #f6f8fc;
   padding: 8px 0;
   border-radius: 30px;
   margin: 5px;
 }
 
 .current-pokemon-stats-container {
-  background: #F6F8FC;
+  background: #f6f8fc;
   display: flex;
   padding: 5px;
   border-radius: 30px;
@@ -137,14 +183,14 @@
   border-radius: 30%;
 }
 
-.current-pokemon-evolution-image:hover{
+.current-pokemon-evolution-image:hover {
   background-color: rgba(0, 0, 0, 0.03);
 }
 
 .current-pokemon-evolution-level-container {
   width: 50px;
-  background-color: #F6F8FC;
+  background-color: #f6f8fc;
   padding: 8px 0;
   border-radius: 30px;
-  margin: 5px;
+  margin: 15px;
 }
