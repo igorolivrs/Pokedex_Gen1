@@ -67,7 +67,7 @@
   margin: 0.5rem;
   padding: 1rem;
   border-radius: 0.7rem;
-  transition: transform 1s;
+  transition: transform .8s;
 }
 
 .pokemon:hover {
@@ -127,7 +127,7 @@
 
 .pagination button {
   padding: .25rem .5rem;
-  margin: .25rem 0;
+  margin: 2rem;
   font-size: .625rem;
   color: white;
   background-color: #6c79db;
@@ -139,6 +139,7 @@
 
 .pagination button:hover {
   background-color: #505bb0;
+  transition: .5s;
 }
 
 .pagination button:active {

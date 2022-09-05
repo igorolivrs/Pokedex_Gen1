@@ -34,6 +34,11 @@ body {
   padding: 5px;
 }
 
+.icons i:hover {
+  color: #505bb0;
+  transition: .5s;
+}
+
 /* Media Queries  */
 
 @media screen and (min-width: 992px) {
